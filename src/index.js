@@ -84,7 +84,7 @@ async function extraRound(character1, character2){
             console.log(`\n⭐🌟⭐🌟✨${character1.NOME}✨🌟⭐🌟⭐`);
         }
         else if(star == "character2"){
-            console.log(`⭐🌟⭐🌟✨${character1.NOME}✨🌟⭐🌟⭐`);
+            console.log(`\n⭐🌟⭐🌟✨${character1.NOME}✨🌟⭐🌟⭐`);
         };
 
         await playRaceEngine(character1, character2, 1);
@@ -115,7 +115,6 @@ async function declareWinner(character1, character2){
         console.log(`🏆🏆Vencedor: ${character2.NOME}🏆🏆\n\nGAME OVER...`)
     }else if(character1.PONTOS === character2.PONTOS){
         extraRound(character1, character2);
-        console.log("\n\nGAME OVER...");
     };
 };
 
